@@ -1,0 +1,32 @@
+{
+  "name": "bitflix",
+  "version": "0.0.1",
+  "description": "blah blah blah",
+  "main": "src/app.js",
+  "scripts": {
+    "pretest": "eslint ./**/*.js",
+    "test": "tape __tests__/*.test.js | tap-spec",
+    "dev:yoyo": "bankai start app.js",
+    "build:yoyo": "bankai build app.js",
+  	"dev:choo": "bankai start choo_app.js",
+		"build:choo": "bankai build choo_app.js"
+	},
+  "author": "earthtone <earthlyillusion@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "bankai": "^9.3.1",
+    "eslint": "^4.16.0",
+    "live-server": "^1.2.0",
+    "prettier": "^1.10.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0",
+    "yo-yoify": "^4.3.0"
+  },
+  "dependencies": {
+    "@earthtone/collection-store": "0.0.2",
+    "choo": "^6.7.0",
+    "nanorouter": "^3.0.1",
+    "yo-yo": "^1.4.1"
+  }
+}
